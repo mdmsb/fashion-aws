@@ -25,7 +25,7 @@ SECRET_KEY = '1w69_(2yr1_p9&_rvx#he=$7-+ic*dnqx^!xq03hsz_)af1+!8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['3.15.180.204', 'nexrise-events.tk',]
+ALLOWED_HOSTS = ['3.15.180.204', 'nexrise-events.tk', 'nexrise-fashions.tk',]
 
 
 # Application definition

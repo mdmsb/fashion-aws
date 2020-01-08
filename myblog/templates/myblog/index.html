@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 
+
+
 {% block body %}
+<style>
+.home {background-color:black;}
+</style>
 
 
 
@@ -16,15 +21,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="https://via.placeholder.com/1000x400" alt="Los Angeles" style="width:100%;">
+        <img src="{{ post1.cover.url }}" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="https://via.placeholder.com/1000x400" alt="Chicago" style="width:100%;">
+        <img src="{{ post2.cover.url }}" alt="Chicago" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="https://via.placeholder.com/1000x400" alt="New york" style="width:100%;">
+        <img src="{{ post3.cover.url }}" alt="New york" style="width:100%;">
       </div>
     </div>
 
@@ -42,8 +47,8 @@
 
 <h2 class="category">NEW ARRIAVELS</h2>
 <div class="container">
-<img src="https://via.placeholder.com/300x300" class="img-circle" alt="Cinque Terre" width="300px" height="300px"><a>MENS</a>
-<img src="https://via.placeholder.com/300x300" class="img-circle" alt="Cinque Terre" width="300px" height="300px"><a>WOMENS</a>
-<img src="https://via.placeholder.com/300x300" class="img-circle" alt="Cinque Terre" width="300px" height="300px"><a>CHILDRENS</a>
+<img src="{{ men.cover.url }}" class="img-circle" alt="Cinque Terre" width="300px" height="300px"><a>MENS</a>
+<img src="{{ women.cover.url }}" class="img-circle"  alt="Cinque Terre" width="300px" height="300px"><a>WOMENS</a>
+<img src="{{ child.cover.url }}" class="img-circle" alt="Cinque Terre" width="300px" height="300px"><a>CHILDRENS</a>
 </div>
 {% endblock %}
